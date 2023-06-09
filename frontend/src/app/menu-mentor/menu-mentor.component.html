@@ -1,0 +1,34 @@
+<app-navigbar></app-navigbar>
+<app-sidebar></app-sidebar>
+<main class="main">
+  <div class="right">
+    <div class="container">
+
+      <div class="card" (click)="showComponent('viewTeam')">
+        <span>View Team</span>
+      </div>
+
+      <div class="card" (click)="showComponent('createProject')">
+        <span>Create Project</span>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="chosen">
+      <ng-container *ngIf="selectedComponent === 'register'">
+        <app-register></app-register>
+      </ng-container>
+      <ng-container *ngIf="selectedComponent === 'viewTeam'">
+        <app-view-team></app-view-team>
+      </ng-container>
+      <ng-container *ngIf="selectedComponent === 'assignTasks'">
+        <app-assign-tasks></app-assign-tasks>
+      </ng-container>
+      <ng-container *ngIf="selectedComponent === 'createProject'">
+        <app-create-project></app-create-project>
+      </ng-container>
+    </div>
+  </div>
+</main>
+
+

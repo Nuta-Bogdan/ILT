@@ -1,0 +1,25 @@
+<div class="co">
+  <div class="login-card">
+    <div class="card-header">
+      <div class="log">Add Members</div>
+    </div>
+    <form #myform="ngForm" (submit)="addStudent(myform)">
+      <div class="form-group">
+        <label for="username">Name:</label>
+        <input required="" name="username" id="username" type="text" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="username">Email:</label>
+        <input required="" name="email" id="email" type="text" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input required="" name="password" id="password" type="password" ngModel>
+      </div>
+      <div class="form-group">
+        <input value="Add Student" type="submit">
+      </div>
+    </form>
+  </div>
+</div>
+

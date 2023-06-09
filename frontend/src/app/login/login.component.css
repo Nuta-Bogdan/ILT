@@ -1,0 +1,153 @@
+mat-toolbar {
+  height: 80px; /* or whatever height you want */
+  line-height: 80px; /* or whatever height you want */
+  background-color: #091462;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  font-family: "Times New Roman";
+
+}
+
+
+.mat-toolbar a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.logo {
+  height: 80px;
+  margin-right:10px;
+}
+
+.spacer {
+  flex: 0.8 0.7 auto;
+}
+
+mat-icon{
+  color: aliceblue;
+  height: 20px;
+}
+.option
+{
+  color: aliceblue;
+
+
+}
+.option:hover {
+
+  color: #60BAF6;
+  transition: background-color 0.3s ease-in-out;
+}
+.option a:hover
+{
+  color: #60BAF6;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.left
+{
+
+  width: 50%;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  padding: 20px;
+
+
+  margin-left: 150px;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+
+  box-shadow: 20px 20px 30px #888;
+}
+
+
+.left img {
+  max-width: 65%;
+  margin-top:70px;
+
+
+
+
+}
+
+.co
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-top:100px;
+  padding: 30px;
+  margin-left:200px;
+
+
+
+
+
+}
+
+.login-card {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  box-shadow: 20px 20px 30px #888;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Times New Roman";
+}
+
+.card-header .log {
+  margin: 0;
+  font-size: 24px;
+  color: black;
+  font-family: "Times New Roman";
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "Times New Roman";
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #091462;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ccc;
+  color: black;
+}
+

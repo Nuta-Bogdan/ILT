@@ -1,0 +1,22 @@
+.button-spacing {
+  margin-top: 10px; /* Adjust the margin as per your requirement */
+}
+
+#mybutton {
+  color: white;
+  background: #0c1a83;
+}
+
+#mybutton:hover {
+  color: white;
+  background: rgba(12, 26, 131, 0.63);
+}
+
+.myform {
+  padding: 20px;
+  margin-left: 30px;
+}
+
+h1 {
+  font-family: "Times New Roman";
+}

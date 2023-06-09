@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let student of allStudents">
+      <div *ngIf="student.email !== selectedLeader.email">
+        <button mat-raised-button (click)="deleteMember(student)" color="accent">
+          {{ student.name }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="centered" *ngIf="sel === true">
+    <div class="delete-info">
+      <h4>Are you sure you want to delete this member?</h4>
+      <div class="delete-buttons">
+        <button mat-raised-button (click)="deleteMemberFromTeam(todelete)" color="warn">Yes</button>
+        <button mat-raised-button (click)="reload()" color="primary">No</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,128 @@
+mat-toolbar {
+  height: 80px; /* or whatever height you want */
+  line-height: 80px; /* or whatever height you want */
+  background-color: #091462;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  font-family: "Times New Roman";
+
+}
+
+.mat-toolbar a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.logo {
+  height: 80px;
+  margin-right: 10px;
+}
+
+.spacer {
+  flex: 0.8 0.7 auto;
+}
+
+mat-icon {
+  color: aliceblue;
+  height: 20px;
+}
+
+.option {
+  color: aliceblue;
+
+
+}
+
+.option:hover {
+
+  color: #60BAF6;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.option a:hover {
+  color: #60BAF6;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#email {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.reg h1 {
+  text-align: center;
+  font-family: "Times New Roman";
+  margin-top: 50px;
+
+}
+
+.reg {
+  text-align: center;
+
+
+  padding: 30px;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 230px;
+  margin-right: 230px;
+  margin-top: 50px;
+  box-shadow: 20px 20px 30px #888;
+
+
+}
+
+.reg button {
+  background-color: #091462;
+  color: aliceblue;
+  margin-top: 20px;
+}
+
+#input-file-id {
+  padding: 20px 20px;
+  font-size: 15px;
+  font-weight: 30;
+
+  color: #fff;
+  background-color: #091462;
+  border-radius: 4px;
+
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+
+
+}
+
+#input-file-id::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 100;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #091462;
+  pointer-events: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#input-file-id:hover::before {
+  background-color: #1976d2;
+}
+
+#input-file-id:focus {
+  outline: none;
+}
+
+#input-file-id::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+

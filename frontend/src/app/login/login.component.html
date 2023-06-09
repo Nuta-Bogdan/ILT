@@ -1,0 +1,55 @@
+<mat-toolbar>
+  <img src="assets/logo.png" alt="Logo" class="logo">
+  <span class="spacer"></span>
+
+  <div class="option">
+    <a routerLink="/">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </a>
+  </div>
+
+  <span class="spacer"></span>
+
+  <div class="option">
+    <a routerLink="/apply">
+      <mat-icon>assignment</mat-icon>
+      <span>Apply</span>
+    </a>
+  </div>
+
+  <span class="spacer"></span>
+
+  <div class="option">
+    <a routerLink="/login">
+      <mat-icon>lock_open</mat-icon>
+      <span>Login</span>
+    </a>
+  </div>
+
+  <span class="spacer"></span>
+</mat-toolbar>
+
+<div class="co">
+  <div class="login-card">
+    <div class="card-header">
+      <div class="log">Login</div>
+    </div>
+    <form #myform="ngForm" (submit)="login(myform)">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input required="" name="username" id="username" type="text" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input required="" name="password" id="password" type="password" ngModel>
+      </div>
+      <div class="form-group">
+        <input value="Login" type="submit">
+      </div>
+    </form>
+  </div>
+  <div class="left">
+    <img src="assets/login.jpg">
+  </div>
+</div>

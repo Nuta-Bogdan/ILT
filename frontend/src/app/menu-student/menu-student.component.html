@@ -1,0 +1,29 @@
+<app-navigbar></app-navigbar>
+<app-sidebar></app-sidebar>
+<main class="main">
+  <div class="right">
+    <div class="container">
+      <div class="card" (click)="showComponent('attend')">
+        <span>Attendance Records</span>
+      </div>
+      <div class="card" (click)="showComponent('grades')">
+        <span>Grading Records</span>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <div class="chosen">
+      <ng-container *ngIf="selectedComponent === 'attend'">
+        <app-view-attendence [selectedStudent]="selectedUser" ></app-view-attendence>
+      </ng-container>
+      <br>
+      <ng-container *ngIf="selectedComponent === 'grades'">
+        <app-view-grades [selectedStudent]="selectedUser"></app-view-grades>
+      </ng-container>
+
+    </div>
+  </div>
+</main>
+
+

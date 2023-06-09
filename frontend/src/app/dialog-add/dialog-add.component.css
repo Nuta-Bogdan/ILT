@@ -1,0 +1,75 @@
+
+.co
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top:100px;
+  padding: 30px;
+  margin-left:200px;
+
+
+
+
+
+}
+
+.login-card {
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  box-shadow: 20px 20px 30px #888;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Times New Roman";
+}
+
+.card-header .log {
+  margin: 0;
+  font-size: 24px;
+  color: black;
+  font-family: "Times New Roman";
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "Times New Roman";
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #091462;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ccc;
+  color: black;
+}

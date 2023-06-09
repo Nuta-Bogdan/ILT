@@ -1,0 +1,43 @@
+<main class="myform">
+  <h1>Assign a task</h1>
+
+  <form form #myform="ngForm" class="example-form" (ngSubmit)="addTask(myform)">
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Task name</mat-label>
+            <input matInput name="taskName">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field>
+            <mat-label>Team Leader</mat-label>
+            <mat-select [(ngModel)]="selectedValue" (selectionChange)="onSelectLeader($event.value)" name="leader">
+              <mat-option *ngFor="let leader of allLeaders" [value]="leader">
+                {{leader.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <div>
+      <mat-form-field>
+        <mat-label>Students</mat-label>
+        <mat-select [formControl]="selectedStudents" multiple name="students">
+          <mat-option *ngFor="let student of allStudents" [value]="student.email">{{student.email}}</mat-option>
+        </mat-select>
+
+      </mat-form-field>
+    </div>
+    <table>
+      <tr>
+        <td></td>
+        <td>
+          <button id="mybutton" mat-flat-button type="submit">Assign task</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</main>

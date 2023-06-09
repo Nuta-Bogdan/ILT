@@ -1,0 +1,49 @@
+<app-navigbar></app-navigbar>
+<app-sidebar></app-sidebar>
+<main class="main">
+  <div class="right">
+    <div class="container" *ngFor="let student of allStudents">
+      <div class="card"(click)="showStudentData(student)">
+        <div class="card-info">
+          <div class="card-avatar"></div>
+          <div class="card-title">{{ student.name }}</div>
+          <div class="card-subtitle">{{ student.email }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <div *ngIf="allStudents.length < 5">
+        <button mat-raised-button class="mybutton" (click)="addMember()" color="primary">Add member</button>
+      </div>
+      <div>
+        <button mat-raised-button class="mybutton" (click)="deleteMember()" color="primary">Delete member</button>
+      </div>
+    </div>
+  </div>
+</main>
+<br>
+<br>
+<br>
+
+<div class="chosen">
+  <div class="todisplay" *ngIf="showAddComponent">
+    <app-dialog-add></app-dialog-add>
+  </div>
+  <div *ngIf="showDeleteComponent">
+    <app-dialog-delete class="delete" *ngIf="showDeleteComponent"
+
+                       (memberDeleted)="handleMemberDeleted()">
+    </app-dialog-delete>
+
+  </div>
+  <div  *ngIf="selectedStudent && !showAddComponent && !showDeleteComponent">
+    <app-view-attendence  class="todisplay" [selectedStudent]="selectedStudent"></app-view-attendence>
+  </div>
+  <br>
+  <br>
+  <div class="todisplay" *ngIf="selectedStudent && !showAddComponent && !showDeleteComponent">
+    <app-view-grades [selectedStudent]="selectedStudent"></app-view-grades>
+  </div>
+</div>
+
+
